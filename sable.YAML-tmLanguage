@@ -1,0 +1,23 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: SableCC
+scopeName: source.sable
+fileTypes: [sable]
+uuid: c1172125-0193-4c95-bfe5-44135e904d4c
+
+patterns:
+- name: constant.other.sable
+  match: Package|Helpers|Tokens|Productions|Ignored Tokens|Abstract Syntax Tree
+
+- name: comment.line.double-slash.sable
+  match: (?://.*)
+
+- name: support.class.sable
+  match: (?:\{\S+\})
+
+- name: support.function.sable
+  match: (?:\[\S+\])
+
+- name: constant.character.sable
+  match: (?:\{ -> .*\})
+...
